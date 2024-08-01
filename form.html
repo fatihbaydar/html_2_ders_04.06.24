@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        #age{
+            width: 100px;
+        }
+        #sor{
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formlar</h1>
+<form action="result.html" method="get">
+    <label for="isim" style="color: blue;">Adı:</label>
+    <input type="text" id="isim" name="Girilen isim" placeholder="adınızı giriniz" >
+    <br>
+    <label for="soyisim">Soyadı:</label>
+    <input type="text" id="soyisim" name="girilen soyisim" placeholder="soyadınızı giriniz">
+
+    <!-- password -->
+
+    <div>
+        <label for="şifre">Parola gir:</label>
+        <input type="password" name="girilen parola" id="şifre" placeholder="şifrenizi giriniz">
+    </div>
+
+    <!-- radio -->
+    <div>
+        <label for="">Cinsiyet</label><br>
+        <label for="cinsiyet1">Erkek</label>
+        <input type="radio" name="Cinsiyet Bilgisi" id="cinsiyet1">
+        <label for="cinsiyet2">Kadın</label>
+        <input type="radio" name="Cinsiyet Bilgisi" id="cinsiyet2">
+    </div>
+
+    <!-- checkbox -->
+
+    <label for="">Nelerden Hoşlanırsınız</label> <br>
+    <input type="checkbox" id="Kitap" name="favori1" value="Kitap okuma">
+    <label for="Kitap">Kitap Okuma</label><br>
+    <input type="checkbox" id="Gezi" name="favori2" value="Gezi">
+    <label for="Gezi">Seyahat etmek</label><br>
+    <input type="checkbox" id="Sinema" name="favori3" value="Film izlemek">
+    <label for="Sinema">Film izlemek</label>
+
+    <!-- number -->
+    <div>
+        <label for="age">Yaşınızı Giriniz</label>
+        <input type="number" name="Girilen Yaş" id="age" min="15" step="3">
+    </div>
+
+    <div>
+        <label for="sor">Aramak istediğiniz şeyi Giriniz</label>
+        <input type="search" name="Aranılan şey" id="sor">
+    </div>
+
+    <div>
+        <label for="eposta">Eposta Adresiniz:</label>
+        <input type="email" name="Eposta" id="eposta">
+    </div>
+
+    <div>
+        <label for="renk">Renk Seçiniz</label>
+        <input type="color" name="Seçilen renk" id="renk">
+    </div>
+
+    <div>
+        <label for="dosya">Dosya Seçiniz</label>
+        <input type="file" name="Seçilen Dosya" id="dosya">
+    </div>
+
+    <div>
+        <label for="tel">Telefon numaranız</label>
+        <input type="tel" name="Telefon" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+    </div>
+
+    <div>
+        <label for="tar">Tarih</label>
+        <input type="date" name="Girilen Tarih" id="tar">
+    </div>
+
+
+
+    <label for="seker">Hangi Tatlıyı Seversiniz:</label>
+    <select name="Seçilen Tatlı" id="seker" size="5" multiple>
+        <option value="Sütlaç">Sütlaç</option>
+        <option value="Güllaç">Güllaç</option>
+        <option value="Aşure">Aşure</option>
+        <option value="Kazandibi">Kazandibi</option>
+        <option value="kek">kek</option>
+        <option value="Kurabiye">Kurabiye</option>
+    </select>
+    <br>
+
+    <label for="seker2">Hangi Tatlıyı Seversiniz:</label>
+    <select name="seçilen tatlı" id="seker2">
+        <optgroup label="sütlü tatlılar">
+        <option value="Sütlaç">Sütlaç</option>
+        <option value="Güllaç">Güllaç</option>
+        <option value="Aşure">Aşure</option>
+        <option value="Kazandibi">Kazandibi</option>
+        <option value="kek">kek</option>
+        <option value="Kurabiye">Kurabiye</option>
+        </optgroup>
+        <optgroup label="serbetli tatlılar">
+            <option value="Baklava">Baklava</option>
+            <option value="Şöbiyet">Şöbiyet</option>
+            <option value="Havuç Dilimi">Havuç Dilimi</option>
+            <option value="Sarma">Sarma</option>
+
+        </optgroup>
+    </select>
+
+     
+    
+
+
+    <datalist>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+    </datalist>
+
+
+
+
+
+<br><br><br><br><br><br><br>
+    <input type="submit" value="Gönder">
+    
+</form>
+
+</body>
+</html>
